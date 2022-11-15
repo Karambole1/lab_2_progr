@@ -12,7 +12,6 @@ int main() {
 	std::string name, taste;
 	int diameter, watts, resistance, capacity, mAh, heating_temperature, fiber_density, strength;
 
-	std::string srt;
 	Evaporator* evaporators[5] = { 0, 0, 0, 0, 0 };
 	Battery* batteries[5] = { 0, 0, 0, 0, 0 };
 	Cotton_wool* cotton_wools[5] = { 0, 0, 0, 0, 0 };
@@ -74,7 +73,6 @@ int main() {
 
 				if (evaporators[list_choice - 1] == 0) {
 					printf("\nCreate new:\n");
-					while (getchar() != '\n');
 
 					std::cout << "Enter Evaporator's name: "; std::cin >> name;
 					std::cout << "Enter Evaporator's diameter: "; std::cin >> diameter;
@@ -123,7 +121,6 @@ int main() {
 
 				if (batteries[list_choice - 1] == 0) {
 					printf("\nCreate new:\n");
-					while (getchar() != '\n');
 
 					std::cout << "Enter Battery's name: "; std::cin >> name;
 					std::cout << "Enter Battery's capacity: "; std::cin >> capacity;
@@ -171,7 +168,6 @@ int main() {
 
 				if (cotton_wools[list_choice - 1] == 0) {
 					printf("\nCreate new:\n");
-					while (getchar() != '\n');
 
 					std::cout << "Enter Cotton wool's name: "; std::cin >> name;
 					std::cout << "Enter Cotton wool's heating temperature: "; std::cin >> heating_temperature;
@@ -219,7 +215,6 @@ int main() {
 
 				if (goos[list_choice - 1] == 0) {
 					printf("\nCreate new:\n");
-					while (getchar() != '\n');
 
 					std::cout << "Enter Goo's name: "; std::cin >> name;
 					std::cout << "Enter Goo's strength: "; std::cin >> strength;
